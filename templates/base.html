@@ -114,9 +114,9 @@
 
 
 
-        {% if messages %}
-            <div class="messages-container">
-                 {% for message in messages %}
+    {% if messages %}
+        <div class="messages-container">
+            {% for message in messages %}
                 {% with message.level as level %}
                     {% if level == 40 %}
                         {% include 'includes/toasts/toast_error.html' %}
@@ -129,20 +129,20 @@
                     {% endif %}
                 {% endwith %}
             {% endfor %}
-            </div>
-        {% endif %}
+        </div>
+    {% endif %}
 
-        {% block page_header %}
-        {% endblock %}
+    {% block page_header %}
+    {% endblock %}
 
-        {% block content %}
-        {% endblock %}
+    {% block content %}
+    {% endblock %}
 
-        {% block postloadjs %}
+    {% block postloadjs %}
         <script type="text/javascript">
             $('.toast').toast('show');
         </script>
-        {% endblock %}
+    {% endblock %}
 
   </body>
 </html>
