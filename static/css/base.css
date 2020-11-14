@@ -152,6 +152,16 @@ a.category-badge > span.badge:hover {
     }
 
     body {
-        height: calc(100vh - 116px);
+        height: calc(100vh - 232px);
     }
+}
+
+.footer-links a{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.footer-social a{
+    padding-left: 5px;
+    padding-right: 5px;
 }
