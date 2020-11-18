@@ -1,15 +1,4 @@
-[{"pk": 1, "model": "products.product", "fields": {"sku": "0001", "name": "Gym Membership", "description":
-"Monthly Membership For All Access", "price": 49.99, "category": 2, "rating": 5, "image_url": "", "image": "power_fitness.png"}},
-{"pk": 2, "model": "products.product", "fields": {"sku": "0002", "name": "Personal Training Session", "description":
-"1 HOUR Personal Training Session With Instructor", "price": 75.00, "category": 3, "rating": 5, "image_url":
-"https://www.bodycoach.ie/uploads/2/6/4/8/26486341/published/personal-trainer-1-compressor-1024x683.jpg?1544535573", "image": "pt_session1.jpg"}},
-{"pk": 3, "model": "products.product", "fields": {"sku": "0003", "name": "Personal Training Session", "description":
-"2 HOUR Personal Training Session With Instructor", "price": 150.00, "category": 3, "rating": 5, "image_url":
-"https://www.thefitnesseducationacademy.co.uk/images/slideshome/78-slide.jpg", "image": "pt_session2.jpg"}},
-{"pk": 4, "model": "products.product", "fields": {"sku": "0004", "name": "Personal Training Session", "description":
-"3 HOUR Personal Training Session With Instructor", "price": 225.00, "category": 3, "rating": 5, "image_url":
-"https://www.clubactivekells.ie/_webgears/_filescontent/1514989229optimised.jpg", "image": "pt_session3.jpg"}},
-{"pk": 5, "model": "products.product", "fields": {"sku": "0005", "name": "Male Training Top", "description":
+[{"pk": 5, "model": "products.product", "fields": {"sku": "0005", "name": "Male Training Top", "description":
 "Branded Fitness 2020 Training Top", "price": 26.99, "category": 1, "rating": 4, "image_url":
 "https://img01.ztat.net/article/spp-media-p1/f855dacddd743a698eff20893b049eca/4ba9f7e2bf734c8aa53b2976c0365e32.jpg?imwidth=1800&filter=packshot",
 "image": "mens_training_top.jpg"}},
