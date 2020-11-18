@@ -7,7 +7,7 @@ from .models import Subscription, Category
 
 
 def all_subscriptions(request):
-    """ A view to return all products """
+    """ A view to return all subscriptions """
 
     subscriptions = Subscription.objects.all()
     query = None
@@ -43,7 +43,7 @@ def all_subscriptions(request):
                 return redirect(reverse('subscriptions'))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
-            products = products.filter(queries)
+            subscriptions = subscriptions.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
 
@@ -54,7 +54,7 @@ def all_subscriptions(request):
         'current_sorting': current_sorting,
     }
 
-    return render(request, 'subscriptions/subscriptions.html', context)
+    return render(request, 'subscriptions.html', context)
 
 
 def subscription_detail(request, subscription_id):
@@ -66,4 +66,4 @@ def subscription_detail(request, subscription_id):
         'subscription': subscription,
     }
 
-    return render(request, 'subscriptions/subscription_detail.html', context)
+    return render(request, 'subscription_detail.html', context)
