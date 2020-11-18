@@ -66,4 +66,4 @@ def subscriptions_detail(request, subscription_id):
         'subscription': subscription,
     }
 
-    return render(request, 'subscriptions/subscription_detail.html', context)
+    return render(request, 'subscriptions/subscriptions_detail.html', context)
