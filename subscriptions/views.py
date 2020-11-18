@@ -40,10 +40,10 @@ def all_subscriptions(request):
             query = request.GET['q']
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('products'))
+                return redirect(reverse('subscriptions'))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
-            subscriptions = subscriptions.filter(queries)
+            products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
 
@@ -57,7 +57,7 @@ def all_subscriptions(request):
     return render(request, 'subscriptions/subscriptions.html', context)
 
 
-def subscriptions_detail(request, subscription_id):
+def subscription_detail(request, subscription_id):
     """ A view to show individual product details """
 
     subscription = get_object_or_404(Subscription, pk=subscription_id)
@@ -66,4 +66,4 @@ def subscriptions_detail(request, subscription_id):
         'subscription': subscription,
     }
 
-    return render(request, 'subscriptions/subscriptions_detail.html', context)
+    return render(request, 'subscriptions/subscription_detail.html', context)

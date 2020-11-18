@@ -92,6 +92,10 @@ a.category-badge > span.badge:hover {
     padding-bottom: 5rem;
 }
 
+.table {
+   padding-bottom: 5rem; 
+}
+
 /* -------------------------------- Back To Top Button */
 
 .btt-button {
