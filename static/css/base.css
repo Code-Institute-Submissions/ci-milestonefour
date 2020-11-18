@@ -88,6 +88,10 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
+#checkout-form {
+    padding-bottom: 5rem;
+}
+
 /* -------------------------------- Back To Top Button */
 
 .btt-button {
