@@ -10,7 +10,7 @@ body {
     font-family: 'Gloria Hallelujah';
 }
 
-/* from Bulma */
+/* -------------------------------- from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -133,7 +133,7 @@ a.category-badge > span.badge:hover {
     height: 2px;
 }
 
-/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+/* -------------------------------- from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
     height: 0; 
@@ -145,7 +145,7 @@ a.category-badge > span.badge:hover {
     right: 36px;
 }
 
-/* Convenience classes - colors copied from Bootstrap */
+/* -------------------------------- Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
     border-bottom-color: #007bff !important;
 }
@@ -193,7 +193,7 @@ a.category-badge > span.badge:hover {
   }
 }
 
-/* fixed top navbar only on medium and up */
+/* -------------------------------- Fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -208,7 +208,7 @@ a.category-badge > span.badge:hover {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/* -------------------------------- Pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
@@ -219,12 +219,16 @@ a.category-badge > span.badge:hover {
     }
 }
 
+/* -------------------------------- Footer for Fitness 2020 */
+
 .footer-links a{
     padding-left: 1%;
     padding-right: 1%;
+    color: #dc3545;
 }
 
 .footer-social a{
     padding-left: 5px;
     padding-right: 5px;
+    color: black;
 }
