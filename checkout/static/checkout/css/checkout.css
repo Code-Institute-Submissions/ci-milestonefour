@@ -40,6 +40,18 @@
     border: 1px solid #000;
 }
 
+/* -------------------------------- Dropdown Select on Countries From CI Course Content */
+
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
 /* -------------------------------- Spinner Icon From CI Course Content */
 
 #loading-overlay {
