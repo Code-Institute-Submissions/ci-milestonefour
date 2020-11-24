@@ -27,7 +27,7 @@ SECRET_KEY = '8j@(u(#zdve+!$d2pj+0-ujh-9n6(jyp*xd&#n(0#q7jkj9wpe'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fitness-2020-milestonefour.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['https://fitness-2020-milestonefour.herokuapp.com/', 'localhost']
 
 
 # Application definition
