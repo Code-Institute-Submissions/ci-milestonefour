@@ -117,7 +117,7 @@ LOGIN_REDIRECT_URL = '/'
 
 SITE_ID = 1
 
-WSGI_APPLICATION = 'fitness_2020.wsgi.application'
+WSGI_APPLICATION = 'fitness-2020-milestonefour.wsgi.application'
 
 
 # Database
