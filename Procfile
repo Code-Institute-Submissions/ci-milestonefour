@@ -1,1 +1,1 @@
-web: gunicorn fitness_2020.wsgi.application
+web: gunicorn fitness-2020-milestonefour.wsgi.application
