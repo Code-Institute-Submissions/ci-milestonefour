@@ -1,0 +1,1 @@
+web: gunicorn fitness_2020.wsgi.application
