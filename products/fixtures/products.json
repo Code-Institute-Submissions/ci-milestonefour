@@ -64,8 +64,8 @@
     "model": "products.product",
     "fields": {
       "sku": "0005",
-      "name": "Male Training Top",
-      "description": "Branded Fitness 2020 Training Top",
+      "name": "Men's Training Top",
+      "description": "Branded Fitness 2020 Men's Training Top",
       "price": 26.99,
       "category": 1,
       "subscription": "False",
@@ -79,8 +79,8 @@
     "model": "products.product",
     "fields": {
       "sku": "0006",
-      "name": "Female Training Top",
-      "description": "Branded Fitness 2020 Training Top",
+      "name": "Women's Training Top",
+      "description": "Branded Fitness 2020 Women's Training Top",
       "price": 26.99,
       "category": 1,
       "subscription": "False",
@@ -94,8 +94,8 @@
     "model": "products.product",
     "fields": {
       "sku": "0007",
-      "name": "Male Training Shorts",
-      "description": "Branded Fitness 2020 Training Shorts",
+      "name": "Men's Training Shorts",
+      "description": "Branded Fitness 2020 Men's Training Shorts",
       "price": 14.99,
       "category": 1,
       "subscription": "False",
@@ -109,8 +109,8 @@
     "model": "products.product",
     "fields": {
       "sku": "0008",
-      "name": "Female Training Shorts",
-      "description": "Branded Fitness 2020 Training Shorts",
+      "name": "Women's Training Shorts",
+      "description": "Branded Fitness 2020 Wome's Training Shorts",
       "price": 14.99,
       "category": 1,
       "subscription": "False",
@@ -124,8 +124,8 @@
     "model": "products.product",
     "fields": {
       "sku": "0009",
-      "name": "Male Training Leggings",
-      "description": "Branded Fitness 2020 Leggings",
+      "name": "Men's Training Leggings",
+      "description": "Branded Fitness 2020 Men's Leggings",
       "price": 19.99,
       "category": 1,
       "subscription": "False",
@@ -139,8 +139,8 @@
     "model": "products.product",
     "fields": {
       "sku": "00010",
-      "name": "Female Training Leggings",
-      "description": "Branded Fitness 2020 Leggings",
+      "name": "Women's Training Leggings",
+      "description": "Branded Fitness 2020 Women's Leggings",
       "price": 19.99,
       "category": 1,
       "subscription": "False",
@@ -154,8 +154,8 @@
     "model": "products.product",
     "fields": {
       "sku": "00011",
-      "name": "Male Hoody",
-      "description": "Branded Fitness 2020 Hoody",
+      "name": "Men's Hoody",
+      "description": "Branded Fitness 2020 Men's Hoody",
       "price": 39.99,
       "category": 1,
       "subscription": "False",
@@ -169,8 +169,8 @@
     "model": "products.product",
     "fields": {
       "sku": "00012",
-      "name": "Female Hoody",
-      "description": "Branded Fitness 2020 Hoody",
+      "name": "Women's Hoody",
+      "description": "Branded Fitness 2020 Women's Hoody",
       "price": 39.99,
       "category": 1,
       "subscription": "False",
@@ -184,8 +184,8 @@
     "model": "products.product",
     "fields": {
       "sku": "00013",
-      "name": "Male Tracksuit",
-      "description": "Branded Fitness 2020 Tracksuit",
+      "name": "Mens's Tracksuit",
+      "description": "Branded Fitness 2020 Mens's Tracksuit",
       "price": 59.99,
       "category": 1,
       "subscription": "False",
@@ -199,14 +199,44 @@
     "model": "products.product",
     "fields": {
       "sku": "00014",
-      "name": "Female Tracksuit",
-      "description": "Branded Fitness 2020 Tracksuit",
+      "name": "Women's Tracksuit",
+      "description": "Branded Fitness 2020 Women's Tracksuit",
       "price": 59.99,
       "category": 1,
       "subscription": "False",
       "rating": 5,
       "image_url": "https://img01.ztat.net/article/spp-media-p1/2094bb3b000932bc96f4e42aadb759b9/263ee52e354448a9b5c999b3e1fd44e4.jpg?imwidth=1800&filter=packshot",
       "image": "womens_tracksuit.jpg"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "00015",
+      "name": "Men's Sports Socks",
+      "description": "Branded Fitness 2020 Men's Sports socks",
+      "price": 9.99,
+      "category": 4,
+      "subscription": "False",
+      "rating": 5,
+      "image_url": "https://img01.ztat.net/article/spp-media-p1/2094bb3b000932bc96f4e42aadb759b9/263ee52e354448a9b5c999b3e1fd44e4.jpg?imwidth=1800&filter=packshot",
+      "image": "mens_sports_socks.jpg"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "00016",
+      "name": "Mens Tracksuit Bottoms",
+      "description": "Branded Fitness 2020 Men's Tracksuit Bottoms",
+      "price": 49.10,
+      "category": 6,
+      "subscription": "False",
+      "rating": 5,
+      "image_url": "https://img01.ztat.net/article/spp-media-p1/f83a641b425739beb55447ab20e808ac/3cfade9c595a4eb78fc7424b7d3474d1.jpg?imwidth=1800&filter=packshot",
+      "image": "mens_tracksuit_bottoms.jpg"
     }
   }
 ]
