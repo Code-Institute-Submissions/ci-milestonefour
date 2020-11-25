@@ -1,2 +1,0 @@
-[{"pk": 2, "model": "subscriptions.category", "fields": {"name": "gym_membership", "friendly_name": "Gym Membership"}},
-{"pk": 3, "model": "subscriptions.category", "fields": {"name": "pt_session", "friendly_name": "Personal Training Sessions"}}]

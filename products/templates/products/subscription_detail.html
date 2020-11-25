@@ -15,42 +15,42 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
-                    {% if product.image %}
-                        <a href="{{ product.image.url }}" target="_blank">
-                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    {% if subscription.image %}
+                        <a href="{{ subscription.image.url }}" target="_blank">
+                            <img class="card-img-top img-fluid" src="{{ subscription.image.url }}" alt="{{ subscription.name }}">
                         </a>
                         {% else %}
                         <a href="">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ subscription.name }}">
                         </a>
                     {% endif %}
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-details-container mb-5 mt-md-5">
-                    <p class="mb-0">{{ product.name }}</p>
-                    <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                    {% if product.category %}
+                <div class="subscription-details-container mb-5 mt-md-5">
+                    <p class="mb-0">{{ subscription.name }}</p>
+                    <p class="lead mb-0 text-left font-weight-bold">€{{ subscription.price }}</p>
+                    {% if subscription.category %}
                     <p class="small mt-1 mb-0">
-                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                        <a class="text-muted" href="{% url 'subscriptions' %}?category={{ subscription.category.name }}">
+                            <i class="fas fa-tag mr-1"></i>{{ subscription.category.friendly_name }}
                         </a>
                     </p>
                     {% endif %}
-                    {% if product.rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                    {% if subscription.rating %}
+                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ subscription.rating }} / 5</small>
                     {% else %}
                         <small class="text-muted">No Rating</small>
                     {% endif %}
-                    <p class="mt-3">{{ product.description }}</p>
-                        <form class="form" action="{% url 'add_to_shopping_bag' product.id %}" method="POST">
+                    <p class="mt-3">{{ subscription.description }}</p>
+                        <form class="form" action="{% url 'add_to_shopping_bag' subscription.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
-                            {% with product.has_sizes as s %}
+                            {% with subscription.has_sizes as s %}
                             {% if s %}
                                 <div class="col-12">
                                     <p><strong>Size:</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_size" id="id_product_size">
+                                    <select class="form-control rounded-0 w-50" name="subscription_size" id="id_subscription_size">
                                         <option value="xs">XS</option>
                                         <option value="s">S</option>
                                         <option value="m" selected>M</option>
@@ -65,7 +65,7 @@
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <button class="decrement-qty btn btn-black rounded-0" 
-                                                data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                                data-item_id="{{ subscription.id }}" id="decrement-qty_{{ subscription.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-minus"></i>
                                                 </span>
@@ -73,11 +73,11 @@
                                         </div>
                                         <input class="form-control qty_input" type="number"
                                             name="quantity" value="1" min="1" max="99"
-                                            data-item_id="{{ product.id }}"
-                                            id="id_qty_{{ product.id }}">
+                                            data-item_id="{{ subscription.id }}"
+                                            id="id_qty_{{ subscription.id }}">
                                         <div class="input-group-append">
                                             <button class="increment-qty btn btn-black rounded-0"
-                                                data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                                data-item_id="{{ subscription.id }}" id="increment-qty_{{ subscription.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-plus"></i>
                                                 </span>
@@ -88,7 +88,7 @@
                             </div>
 
                             <div class="col{% if s %}-12 mt-2{% endif %}">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <a href="{% url 'subscriptions' %}" class="btn btn-outline-black rounded-0 mt-5">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>

@@ -13,7 +13,9 @@ from .forms import ProductForm
 def all_products(request):
     """ A view to return all products """
 
-    products = Product.objects.all()
+    # Show only products
+    products = Product.objects.filter(subscription=False)
+    
     query = None
     categories = None
     sort = None
@@ -138,3 +140,68 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+def all_subscriptions(request):
+    """ A view to return all subscriptions """
+
+    # Show only subscriptions
+    subscriptions = Product.objects.filter(subscription=True)
+    
+    query = None
+    categories = None
+    sort = None
+    direction = None
+
+    if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                subscriptions = subscriptions.annotate(lower_name=Lower('name'))
+            if sortkey == 'category':
+                sortkey = 'category__name'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+                    subscriptions = subscriptions.order_by(sortkey)
+
+    if request.GET:
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            subscriptions = subscriptions.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+
+        if 'q' in request.GET:
+            query = request.GET['q']
+            if not query:
+                messages.error(request, "You didn't enter any search criteria!")
+                return redirect(reverse('subscriptions'))
+
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            subscriptions = subscriptions.filter(queries)
+
+    current_sorting = f'{sort}_{direction}'
+
+    context = {
+        'subscriptions': subscriptions,
+        'search_term': query,
+        'current_categories': categories,
+        'current_sorting': current_sorting,
+    }
+
+    return render(request, 'products/subscriptions.html', context)
+
+
+def subscription_detail(request, subscription_id):
+    """ A view to show individual subscription details """
+
+    subscription = get_object_or_404(Product, pk=subscription_id)
+
+    context = {
+        'subscription': subscription,
+    }
+
+    return render(request, 'products/subscription_detail.html', context)
