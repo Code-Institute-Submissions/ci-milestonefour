@@ -15,7 +15,7 @@ def all_products(request):
 
     # Show only products
     products = Product.objects.filter(subscription=False)
-    
+
     query = None
     categories = None
     sort = None
@@ -147,7 +147,7 @@ def all_subscriptions(request):
 
     # Show only subscriptions
     subscriptions = Product.objects.filter(subscription=True)
-    
+
     query = None
     categories = None
     sort = None
