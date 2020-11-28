@@ -168,7 +168,8 @@ def all_subscriptions(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-                subscriptions = subscriptions.annotate(lower_name=Lower('name'))
+                subscriptions = subscriptions.annotate(
+                    lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
             if 'direction' in request.GET:
