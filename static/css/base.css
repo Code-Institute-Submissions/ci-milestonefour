@@ -334,6 +334,12 @@ input[name='q']::placeholder {
     }
 }
 
+/* -------------------------------- Return page for Fitness 2020 */
+
+#return-content {
+    padding-top: 5rem !important;
+}
+
 /* -------------------------------- Footer for Fitness 2020 */
 
 .footer-links a{
