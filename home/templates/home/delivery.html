@@ -1,8 +1,23 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content %}
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 
-    <h1 class="display-4 text-success">It works!!</h1>
+{% block content %} 
+
+<!--Delivery-content-->
+
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div id="return-content" class="col-12 pt-3"></div>
+    </div>
+</div>
 
 {% endblock %}
