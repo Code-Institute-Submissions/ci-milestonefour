@@ -356,14 +356,14 @@
     "model": "products.product",
     "fields": {
       "sku": "00023",
-      "name": "",
-      "description": "",
+      "name": "Beginner Exercise Plan",
+      "description": "Subscribe to our Beginner Exercise Plan. A great place to start, learn the exercises. Get great plans from our trained coaches and kick off your road to Fitness.",
       "has_sizes": "False",
-      "price": ,
+      "price": 19.99,
       "category": 3,
       "subscription": "True",
       "rating": 5,
-      "image_url": "",
+      "image_url": "https://cdn.pixabay.com/photo/2014/09/07/15/31/number-437919__340.jpg",
       "image": "number_one.jpg"
     }
   },
@@ -372,14 +372,14 @@
     "model": "products.product",
     "fields": {
       "sku": "00024",
-      "name": "",
-      "description": "",
+      "name": "Intermediate Excercise Plan",
+      "description": "Subscribe to our Intermediate Exercise Plan. Here you will be given a slightly tougher plan with bigger and better exercises.",
       "has_sizes": "False",
-      "price": ,
+      "price": 29.99,
       "category": 3,
       "subscription": "True",
       "rating": 5,
-      "image_url": "",
+      "image_url": "https://cdn.pixabay.com/photo/2014/09/07/15/31/number-437918__340.jpg",
       "image": "number_two.jpg"
     }
   },
@@ -388,14 +388,14 @@
     "model": "products.product",
     "fields": {
       "sku": "00025",
-      "name": "",
-      "description": "",
+      "name": "Advanced Exercise Plan",
+      "description": "Subscribe to our Advanced Plan. This is the Ultimate, this plan is tough even for our experienced coaches. Not for the faint hearted!",
       "has_sizes": "False",
-      "price": ,
+      "price": 39.99,
       "category": 3,
       "subscription": "True",
       "rating": 5,
-      "image_url": "",
+      "image_url": "https://cdn.pixabay.com/photo/2014/09/07/15/33/number-437920__340.jpg",
       "image": "number_three.jpg"
     }
   },
@@ -404,14 +404,14 @@
     "model": "products.product",
     "fields": {
       "sku": "00026",
-      "name": "",
-      "description": "",
+      "name": "Beginner Nutritional Plan",
+      "description": "Subscribe to out Beginner Nutritional Plan. This is for the beginners to get you on the right track for eating the right foods while training maximising the use of you calories.",
       "has_sizes": "False",
-      "price": ,
+      "price": 19.99,
       "category": 3,
       "subscription": "True",
       "rating": 5,
-      "image_url": "",
+      "image_url": "https://cdn.pixabay.com/photo/2014/09/07/15/33/number-437923__340.jpg",
       "image": "number_four.jpg"
     }
   },
@@ -420,14 +420,14 @@
     "model": "products.product",
     "fields": {
       "sku": "00027",
-      "name": "",
-      "description": "",
+      "name": "Intermediate Nutritional Plan",
+      "description": "Subscribe to our Intermediate Nutritional Plan. Whether you want a low carb diet or high protein diet this plan allows our nutritionist to specify the right meal plans for the results you want to achieve.",
       "has_sizes": "False",
-      "price": ,
+      "price": 29.99,
       "category": 3,
       "subscription": "True",
       "rating": 5,
-      "image_url": "",
+      "image_url": "https://cdn.pixabay.com/photo/2015/01/07/20/29/number-591945__340.jpg",
       "image": "number_five.jpg"
     }
   },
@@ -436,14 +436,14 @@
     "model": "products.product",
     "fields": {
       "sku": "00028",
-      "name": "",
-      "description": "",
+      "name": "Advanced Nutritional Plan",
+      "description": "Subscribe to our Advanced Nutritional Plan. This is the ultimate plan with strict meal plans with accurate calorie intake to specifically match you exercise plan!",
       "has_sizes": "False",
-      "price": ,
+      "price": 39.99,
       "category": 3,
       "subscription": "True",
       "rating": 5,
-      "image_url": "",
+      "image_url": "https://cdn.pixabay.com/photo/2014/09/07/15/35/number-437924__340.jpg",
       "image": "number_six.jpg"
     }
   }
