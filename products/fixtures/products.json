@@ -244,6 +244,22 @@
     "model": "products.product",
     "fields": {
       "sku": "00016",
+      "name": "Women's Sports Socks",
+      "description": "Branded Fitness 2020 Women's Sports socks",
+      "has_sizes": "True",
+      "price": 8.99,
+      "category": 4,
+      "subscription": "False",
+      "rating": 5,
+      "image_url": "",
+      "image": "womens_sports_socks.jpg"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "00017",
       "name": "Mens Tracksuit Bottoms",
       "description": "Branded Fitness 2020 Men's Tracksuit Bottoms",
       "has_sizes": "True",
@@ -253,6 +269,54 @@
       "rating": 5,
       "image_url": "https://img01.ztat.net/article/spp-media-p1/f83a641b425739beb55447ab20e808ac/3cfade9c595a4eb78fc7424b7d3474d1.jpg?imwidth=1800&filter=packshot",
       "image": "mens_tracksuit_bottoms.jpg"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "00018",
+      "name": "Women's Tracksuit Bottoms",
+      "description": "Branded Fitness 2020 Women's Tracksuit Bottoms",
+      "has_sizes": "True",
+      "price": 44.10,
+      "category": 6,
+      "subscription": "False",
+      "rating": 5,
+      "image_url": "https://img01.ztat.net/article/spp-media-p1/b8da5d66df2d353ca2d6425118ceee19/e819c8dc60054911a3aa1bbcbf440255.jpg?imwidth=1800&filter=packshot",
+      "image": "womens_tracksuit_bottoms.jpg"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "00019",
+      "name": "Men's Short Socks",
+      "description": "Branded Fitness 2020 Men's Short socks",
+      "has_sizes": "True",
+      "price": 9.99,
+      "category": 4,
+      "subscription": "False",
+      "rating": 5,
+      "image_url": "https://img01.ztat.net/article/spp-media-p1/822da10261d73e4789ff3ec8d2db6b77/89fa28865b8a47d5942f6a081fc37a25.jpg?imwidth=606",
+      "image": "mens_short_socks.jpg"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "00020",
+      "name": "Women's Short Socks",
+      "description": "Branded Fitness 2020 Women's Short socks",
+      "has_sizes": "True",
+      "price": 9.99,
+      "category": 4,
+      "subscription": "False",
+      "rating": 5,
+      "image_url": "https://img01.ztat.net/article/spp-media-p1/6cbd800f172f3dd4981f70b6f4ed59fe/f2793baf3d7a4faa9d64f25554f23e4f.jpg?imwidth=1800&filter=packshot",
+      "image": "womens_short_socks.jpg"
     }
   }
 ]
