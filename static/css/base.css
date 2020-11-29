@@ -340,6 +340,13 @@ input[name='q']::placeholder {
     padding-top: 5rem !important;
 }
 
+/* -------------------------------- 404 Error page for Fitness 2020 */
+
+.error-container{
+padding-top: 5rem;
+padding-bottom: 4rem;
+}
+
 /* -------------------------------- Footer for Fitness 2020 */
 
 .footer-links a{

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content%}
+
+<!-- 404 Page Error, if a user enters incorrect URL-->
+
+<div class="container-fluid  error-container">
+    <div class="row ">
+        <div class="col-12 text-center">
+            <h1 class="uppercase font-weight-bold error-heading"> 
+                <span class="text-black"> 404</span> error
+            </h1>
+            <h3 class="mt-5 error-sub-heading">
+                Oops! Looks like you got lost...
+            </h3>
+            <a href="{% url 'home' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                Home
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
