@@ -11,18 +11,18 @@ class HomeViewsTests(TestCase):
 
     # Returns Page
     def test_returns_page(self):
-        response = self.client.get("/returns/")
+        response = self.client.get("/returns")
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, "home/returns.html")
+        self.assertTemplateUsed(response, "home/return.html")
 
     # Delivery Page
     def test_delivery_page(self):
-        response = self.client.get("/delivery/")
+        response = self.client.get("/delivery")
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, "home/delivery.html")
 
     # Contact Page
     def test_contact_page(self):
-        response = self.client.get("/contact/")
+        response = self.client.get("/contact")
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, "home/contact.html")
