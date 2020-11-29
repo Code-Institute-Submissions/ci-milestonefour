@@ -14,4 +14,4 @@ class ProductModelTests(TestCase):
 class CategoryModelTests(TestCase):
     def test_category_model(self):
         category = Category(name="Test category", friendly_name="Friendly category name")
-        self.assertEqual(category.name, "Friendly category name")
+        self.assertEqual(category.friendly_name, "Friendly category name")

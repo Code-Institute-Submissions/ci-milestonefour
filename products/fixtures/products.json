@@ -318,5 +318,133 @@
       "image_url": "https://img01.ztat.net/article/spp-media-p1/6cbd800f172f3dd4981f70b6f4ed59fe/f2793baf3d7a4faa9d64f25554f23e4f.jpg?imwidth=1800&filter=packshot",
       "image": "womens_short_socks.jpg"
     }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "00021",
+      "name": "Men's Sport Coat",
+      "description": "Branded Fitness 2020 Men's Sport Coat",
+      "has_sizes": "True",
+      "price": 49.99,
+      "category": 5,
+      "subscription": "False",
+      "rating": 5,
+      "image_url": "https://img01.ztat.net/article/spp-media-p1/91ab58bb13633b2e9948d3fefbf2244d/b7e7c15cd99d431495454cf9efe84d16.jpg?imwidth=1800",
+      "image": "mens_sport_coat.jpg"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "00022",
+      "name": "Women's Sport Coat",
+      "description": "Branded Fitness 2020 Women's Sport Coat",
+      "has_sizes": "True",
+      "price": 44.99,
+      "category": 5,
+      "subscription": "False",
+      "rating": 5,
+      "image_url": "https://img01.ztat.net/article/spp-media-p1/6c3a82b676bf33c2a6e883b8b466d265/b3039668a1cf4fddaa2cb8fdee5d4f04.jpg?imwidth=1800&filter=packshot",
+      "image": "womens_sport_coat.jpg"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "00023",
+      "name": "",
+      "description": "",
+      "has_sizes": "False",
+      "price": ,
+      "category": 3,
+      "subscription": "True",
+      "rating": 5,
+      "image_url": "",
+      "image": "number_one.jpg"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "00024",
+      "name": "",
+      "description": "",
+      "has_sizes": "False",
+      "price": ,
+      "category": 3,
+      "subscription": "True",
+      "rating": 5,
+      "image_url": "",
+      "image": "number_two.jpg"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": "00025",
+      "name": "",
+      "description": "",
+      "has_sizes": "False",
+      "price": ,
+      "category": 3,
+      "subscription": "True",
+      "rating": 5,
+      "image_url": "",
+      "image": "number_three.jpg"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sku": "00026",
+      "name": "",
+      "description": "",
+      "has_sizes": "False",
+      "price": ,
+      "category": 3,
+      "subscription": "True",
+      "rating": 5,
+      "image_url": "",
+      "image": "number_four.jpg"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sku": "00027",
+      "name": "",
+      "description": "",
+      "has_sizes": "False",
+      "price": ,
+      "category": 3,
+      "subscription": "True",
+      "rating": 5,
+      "image_url": "",
+      "image": "number_five.jpg"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "sku": "00028",
+      "name": "",
+      "description": "",
+      "has_sizes": "False",
+      "price": ,
+      "category": 3,
+      "subscription": "True",
+      "rating": 5,
+      "image_url": "",
+      "image": "number_six.jpg"
+    }
   }
 ]
