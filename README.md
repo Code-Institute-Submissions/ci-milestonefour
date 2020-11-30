@@ -83,7 +83,7 @@ I used Balsamiq Wireframes for the Mockup Wireframes during the scope plan plann
 I used Balsamiq before because it is a great tool for planning stages and really helps you with design aspects
 of the website. It gives you a real feel and look at a plan and make it easier to visualise.
 
-All the wireframes for this project can be found here in [wireframes](https://github.com/mattjboland/ci-milestonefour/tree/master/wireframes)
+All the wireframes for this project can be found by clicking here [wireframes](https://github.com/mattjboland/ci-milestonefour/tree/master/wireframes)
 
 ### Framework
 
