@@ -12,7 +12,7 @@ Fitness 2020, is an App built using the Django Framework with Python programming
 Throughout this project I have used [Python](https://www.python.org/), a high-end programming
 language along with [Django](https://www.djangoproject.com/), a python framework.
 
-The deployed site can be found at [Fitness 2020](fitness-2020-milestonefour.herokuapp.com).
+The deployed site can be found at [Fitness 2020](https://fitness-2020-milestonefour.herokuapp.com/).
 
 ## Table Of Contents
 
