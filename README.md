@@ -205,7 +205,14 @@ The Footer was based from two different examples and styed to suit the theme of 
 It has links to various pages within the site some social media links and the name of the site.
 
 ## Features Left to Implement
-Expand....
+As I was under time restraints there are some features I would have like to include but didnt have the right amount 
+of time to include.
+
+1. The ability to track users subscribing the the site, or for sessions or subscriptions.
+2. Better filtering of the products and subscriptions.
+3. The ability for users to rate or favourite items on the site.
+4. To include a contact us form on the contact page.
+5. Delivery policy page.
 
 ## Technologies Used
   * [GitPod](https://gitpod.io/workspaces/) - The IDE used for developing this project.
@@ -215,11 +222,12 @@ Expand....
 **Front-End Technologies**
   * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
   * [CSS3](https://developer.mozilla.org/en-US/docs/Archive/CSS3)
-  * [jQuery 3.4.1](https://code.jquery.com/jquery/)
+  * [jQuery 3.5.1](https://code.jquery.com/jquery/)
+  * [JavaScript](https://www.javascript.com/)
   * [Stripe](https://stripe.com/docs/api)
   * [AWS S3 Bucket](https://aws.amazon.com/)
   * [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
-  * [Font Awsome](https://www.bootstrapcdn.com/fontawesome/)
+  * [Font Awesome](https://www.bootstrapcdn.com/fontawesome/)
   * [Bootstrap4](https://www.bootstrapcdn.com/)
 
   **Back-End Technologies**
