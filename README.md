@@ -77,6 +77,14 @@ anyone who like to keep fit or regularly attends a gym.
 I wanted to create a user friendly site the was easily navigated by users with a
 design was visually appealing to the user.
 
+## Wireframes
+
+I used Balsamiq Wireframes for the Mockup Wireframes during the scope plan planning for this website / App. 
+I used Balsamiq before because it is a great tool for planning stages and really helps you with design aspects
+of the website. It gives you a real feel and look at a plan and make it easier to visualise.
+
+All the wireframes for this project can be found here in [wireframes](https://github.com/mattjboland/ci-milestonefour/tree/master/wireframes)
+
 ### Framework
 
   * [Bootstrap 4](https://getbootstrap.com/)
