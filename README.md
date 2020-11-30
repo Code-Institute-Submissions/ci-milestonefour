@@ -396,6 +396,13 @@ I have an issue with the back to top button. I am out of time to try and fix but
 and find a solution to for a future addition. It seems to be hidden behind footer on some pages and visable on others. 
 It does work however but annoying thats is not visable.
 
+I also have a problem when I run the app from the Heroku site and it is really confusing to me and I dont really understand
+why it is happening. When I run the app normally and go through the process of selecting a product and going through with a
+the purchase, when I get to the shopping bag the Secure Checkout button is half hidden behind the and can not be pressed. The same 
+happens on the checkout page. It is very strange. When I do the same on an incognito window or different device it works perfectly.
+I am really confused as to why this happens. I just hope that it is not a serious issue that will effect the project. I am hoping
+that its just my laptop or its cookie based.
+
 ### GitHub Repository
 
 ## Deployment
