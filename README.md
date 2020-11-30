@@ -51,50 +51,82 @@ anyone who like to keep fit or regularly attends a gym.
 
 ### Target Audience
 
-* People who like to keep fit or get in shape
-* People who regularly work out or train
-* People who like to eat right
+* For people who like to keep fit or get in shape.
+* For people who regularly work out or train.
+* For people who like to eat right when training.
+* For people who like to buy clothes for training etc.
+* For people that want quick easy exercise plans.
+* For people who want meal plans to suit their training regime.
 
 ## User Stories
-Expand....
+
+* As a user I want to access all products on a webite.
+* As a user I want to be able to browse a site easily.
+* As a user I want to be able to purchase items quickly and easily.
+* As a user I want to be able to purchase without having to log in.
+* As a user I want to be able to have the option to register.
+* As a user who is registered I want to be able to have an account.
+* As a user who is registered I want to be able to log in and out easily.
+* As a user I want to be able to seatch for particular products.
+* As a user I want to be able to avail of free delivery when ordering.
 
 ## Design
-Expand....
+I wanted to create a user friendly site the was easily navigated by users with a
+design was visually appealing to the user.
 
 ### Framework
 
   * [Bootstrap 4](https://getbootstrap.com/)
+  I used Bootstrap as the front end framework as I was familar with this framework as I have
+  used before on other project. I like that it is easy to use and easy to style to suit the needs
+  of any project.
   * [jQuery 3.4.1](https://code.jquery.com/jquery/)
+  I used this to initialise some Bootstrap components and scripts where JavaScript wasnt needed.
   * [Django 3.1.3](https://www.djangoproject.com/)
-  Expand....
+  This was used for Back-End to tie in with the Front-End Bootstrap. I wasnt as familar with this
+  but lessons through the course help me become some what familar. The rest was learned as I 
+  proceeded building the project.
 
 ### Color Scheme
-Expand....
+I went with a basic Black and White Color Scheme for most the pages in this site. I wanted to stay 
+away from bright colors to help decrease and distraction a user might encounter. This also helps
+the user to maybe purchase an item rather than leave the site. I used A simple background image 
+to display in the backgound which keeps within the theme of the project.
 
 ### Icons
-Expand....
 
-* [Font Awsome 5.11.2](https://fontawesome.com/)
+* [Font Awesome 5.11.2](https://fontawesome.com/)
+I used Font Awesome Icons as again I was familar using these and they help to bring a site to life.
+These were used in the Nav Bar, for social links int the footer. Tags for products, subtle icons on
+buttons etc.
 
 ### Typography
-Expand....
+I used Google Font Gloria Hallelujah as I like this font and believe it works well with theme of this
+project.
 
 ### Wireframes
-Expand....
+I used Balsamiq for the wireframes for this project during the planning stages. I tried to stick to
+them as best as possible but during the course of the development slight changes or improvements
+were made.
 
 ## Features
-Expand....
+This project features apps (applications) created by using Django command **python3 manage.py startapp nameofapp**
 
 ### Home app
-Expand....
+The home app includes the Homepage for the site index.html and the contact, return and delivery pages.
 
 **index (Home Page)**
+This is the main homepage for the site. This is where users and start to navigate through the site and
+begin to search for products or subscriptons that are available to purchase.
 
 **contact.html**
+This is the contact page where users can see the contact details for the site, address, phone number etc.
 
 **delivery.html**
  
 **return.html**
+This is the returns policy page where users can see the terms and conditions of returning products and getting 
+refunds.
 
 ### Products App
 Expand....
