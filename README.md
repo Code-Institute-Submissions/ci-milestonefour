@@ -287,6 +287,11 @@ hobby-tier does not give permissions to allow creation of databases that are req
 testing. To run the test and check the output, the database (Postgres) code configuration in settings.py
 should be temporarily commented out.
 
+I found the testing pretty difficult. It posed many challenges and was very time consuming. The tests are
+particularly hard to debug which also caused them to be time consuming. There was a lot of googling and research
+done for this but in the end I ran out of time. I tried to cover as much as possible but unfortunately I was not
+able to get full coverage on this.
+
 **Command used to run the tests:**
 
 * ``python3 manage.py test``
@@ -315,6 +320,8 @@ directory, run the file in the browser to see the output.
 
 ## Manual Testing
 I have tested the site thoroughly to make sure theres no broken links. I have checked to make sure that the pages are responsive to
+smaller screens like mobile and handheld devices such as phones and tablets. This was particularly annoying as my laptop browser
+for some reason when I inspected pages it showed there was a problem when there actually wasnt and this caused some delays also.
 
 
 #### Stripe payment testing
@@ -360,7 +367,28 @@ added an id with some styling in CSS to make sure it stayed where it was suppose
 
 I originally had the products and subscriptions together in the same app but I wanted to try and split into two different apps,
 this proved to be a lot more difficult and time consuming as I had all the views and urls written. So I reverted back to having
-together with the products. So when I deleted the subscriptions app I caused a major problem. 
+together with the products. So when I deleted the subscriptions app I caused a major problem. This caused the site to crash and
+I was not able to run from my terminal or the heroku site. It was a very worrying time and I thought it was all lost. But with 
+some fantastic help from the guys in tutor support I was able to rectify. This had to be done in a particular way. I had to following
+steps online. 
+
+1. Go through each of your projects apps migration folders and remove everything inside, except the __init__.py file.
+2. Delete the db.sqlite3 file.
+3. Create the initial migrations and generate the database schema:
+
+* ``python manage.py makemigrations``
+* ``python manage.py migrate``
+
+This was a good fix and got everything up and running again. All was not lost.
+
+I also came across a problem when the project was deployed to Heroku. I am not sure how long this was a problem for but I found 
+it thankfully. The the app was running successfull but when I clicked into products or subscriptions I was getting an Internal error
+500, again this was solved with the help of tutor support. I added the DATABASE_URL to the environment in GitPod and also ran
+the migrate command which turned out I was missing a migration. I am not sure which caused the solution but regardless is was back
+running and showing no errors.
+
+While talking about the migrations I did regularly miss a migration which was causing havoc with my progression on this project
+so I learned to check and makes these more regularly.
 
 ### Known Bugs
 
