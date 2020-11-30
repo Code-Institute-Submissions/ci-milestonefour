@@ -46,6 +46,7 @@ The deployed site can be found at [Fitness 2020](fitness-2020-milestonefour.hero
 **7. [Credits](#credits)**
 
 ## UX
+
 This project Fitness 2020 is to provide a Fitness Subscription Service to a user but also provide clothing essentials for 
 anyone who like to keep fit or regularly attends a gym. 
 
@@ -71,6 +72,7 @@ anyone who like to keep fit or regularly attends a gym.
 * As a user I want to be able to avail of free delivery when ordering.
 
 ## Design
+
 I wanted to create a user friendly site the was easily navigated by users with a
 design was visually appealing to the user.
 
@@ -88,6 +90,7 @@ design was visually appealing to the user.
   proceeded building the project.
 
 ### Color Scheme
+
 I went with a basic Black and White Color Scheme for most the pages in this site. I wanted to stay 
 away from bright colors to help decrease and distraction a user might encounter. This also helps
 the user to maybe purchase an item rather than leave the site. I used A simple background image 
@@ -101,34 +104,42 @@ These were used in the Nav Bar, for social links int the footer. Tags for produc
 buttons etc.
 
 ### Typography
+
 I used Google Font Gloria Hallelujah as I like this font and believe it works well with theme of this
 project.
 
 ### Wireframes
+
 I used Balsamiq for the wireframes for this project during the planning stages. I tried to stick to
 them as best as possible but during the course of the development slight changes or improvements
 were made.
 
 ## Features
+
 This project features apps (applications) created by using Django command **python3 manage.py startapp nameofapp**
 
 ### Home app
+
 The home app includes the Homepage for the site index.html and the contact, return and delivery pages.
 
 **index (Home Page)**
+
 This is the main homepage for the site. This is where users and start to navigate through the site and
 begin to search for products or subscriptons that are available to purchase.
 
 **contact.html**
+
 This is the contact page where users can see the contact details for the site, address, phone number etc.
 
 **delivery.html**
  
 **return.html**
+
 This is the returns policy page where users can see the terms and conditions of returning products and getting 
 refunds.
 
 ### Products App
+
 The products app has all the products and subscriptions for the site.
 
 **product.html**
@@ -161,10 +172,12 @@ This page is reserved for the shop owner to add more products to the site.
 This page is also reserved for the shop owner to edit products on the site.
 
 ### Profiles App
+
 The profiles app is for registered users who have signed up and created an account. It displays the users profile and details
 which can be updated at anytime. This page also provides the user with an order history where they can views past orders.
 
 ### Shopping Bag App
+
 The shopping bag app features a summary of all the items added to the shopping bag. This includes the image of the
 item, title and the price. A quantity field is displayed with each item in the bag, giving the ability to adjust the
 quantity in their cart. The user can also see the total of the shopping bag and this will be updated when the user updates
@@ -173,6 +186,7 @@ another calculated total to bring it above the ammount that qualifies for free d
 an estimated cost of delivery.
 
 ### Checkout App
+
 The checkout app allows the user to successfully checkout and purchase items in the shopping bag.
 
 **checkout.html**
@@ -189,6 +203,7 @@ number and date of the order. How much was charged to your card, a summary of it
 information. It also tell the user that a confirmation email was sent to confirm the purchase with all details.
 
 ### Base Template
+
 The base template is a template of features that will be extended to all pages within the site.
 
 **Navbar**
@@ -212,6 +227,7 @@ The Footer was based from two different examples and styed to suit the theme of 
 It has links to various pages within the site some social media links and the name of the site.
 
 ## Features Left to Implement
+
 As I was under time restraints there are some features I would have like to include but didnt have the right amount 
 of time to include.
 
@@ -222,6 +238,7 @@ of time to include.
 5. Delivery policy page.
 
 ## Technologies Used
+
   * [GitPod](https://gitpod.io/workspaces/) - The IDE used for developing this project.
   * [GitHub](https://github.com/) - Used to store and share all of the project code remotely.
   * [Balsamiq](https://balsamiq.com/) - Used to create the wireframes for this project.
@@ -246,6 +263,7 @@ of time to include.
 # Testing 
 
 ## Automated Testing
+
 Automated testing is implemented to support manual testing during the development process.
 The intent was not to achieve 100% coverage with automated testing as I am limited to time contraints
 but on average this seems to be quite difficult to achieve.
@@ -337,6 +355,7 @@ to GitHub using a chained command.
 git add .; git commit -m "Commit message"; git push
 
 ### How to run this project locally
+
 The Fitness 2020 project was developed using the online IDE GitPod and using Git and GitHub for
 version control. It is hosted on Heroku with static files and media files hosted in AWS S3 Bucket.
 
@@ -411,66 +430,72 @@ Set the following variables.
 |USE_AWS                        |<YOUR_USE_AWS>              |
 
 
-13. ``pip3 install gunicorn``
+14. ``pip3 install gunicorn``
 
-14. Again freeze requirements.
+15. Again freeze requirements.
 
-15. Create a Procfile with the terminal command 
+16. Create a Procfile with the terminal command 
 
 ``echo web: python app.py > Procfile``
 
 web: gunicorn appname.wsgi:application
 
-16. Then log into Heroku from terminal.
+17. Then log into Heroku from terminal.
 
 ``heroku login -i``
 
-17. Next run.
+18. Next run.
 
 ``heroku config:set DISABLE_COLLECTSTATIC=1 --app appname``
 
 This will prevent Heroku from collecting static files when we deploy.
 
-18. Next add the hostname of our app to allowed hosts in settings.py.
+19. Next add the hostname of our app to allowed hosts in settings.py.
 
 ``ALLOWED_HOSTS = ['fitness-2020-milestonefour.herokuapp.com', 'localhost']``
 
 Add local host so GitPod will still work.
 
-19. git add and git commit the new requirements and Procfile and then git push the project 
+20. git add and git commit the new requirements and Procfile and then git push the project 
 to GitHub 
 
-20. Then connect to Heroku.
+21. Then connect to Heroku.
 
 ``heroku git:remote -a appname``
 
 ``git push heroku master``
 
-21. Next set up to automatically deploy when we push to GitHub. Go to app in Heroku deploy tab
-set to GitHub and search for you repository and then click connect.
+22. Next set up to automatically deploy when we push to GitHub. Go to app in Heroku deploy tab
+set to GitHub and search for you repository and then click connect.                
 
-7. In the heroku dashboard for the application, click on settings tab and then click on the 
-Reveal config vars button to configure environmental variables.
+23. In the Heroku dashboard, click "Deploy".
 
-Set the following config vars:
+24. In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
 
-                 
-
-8. In the Heroku dashboard, click "Deploy".
-
-9. In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
-
-10. The site is now successfully deployed.
+25. The site is now successfully deployed.
 
 ## Credits
-Expand....
 
 **Content**
 
-All the product details, images and the contents are from https://www.zalando.ie/men-home/ and I modifed to use in the project.
+All the product details, images and the contents are from 
+
+(https://www.zalando.ie/men-home/) 
+(https://www.zalando.ie/women-home/)
+
+Some images from the following sites were also used.
+
+(https://pixabay.com/)
+(https://www.bodycoach.ie/)
+(https://www.thefitnesseducationacademy.co.uk/)
+(https://www.clubactivekells.ie/)
+
 
 **Tutorials**
-Expand....
+
+There were many tutorials watching during the developement of this project.
+
+* [Code Institute](https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/info)
 
 * [Python Django Tutorial by Corey Schafer](https://www.youtube.com/watch?v=F5mRW0jo-U4)
 
@@ -481,9 +506,33 @@ Expand....
 * The [Django documentation](https://devdocs.io/django~1.11/)
 
 ### Acknowledgement
-Expand....
+
+A massive thank you goes to all the tutors, mentors and support staff at Code Institute. Honestly dont know how many
+times I was onto Support for help. It was greatly appreciated and this project would not have been possible without their 
+help.
+
+Special mention to CI Tutor Support who really gave me a massive push in the right direction. Mention must go to the other
+students and all on the Slack channels too. There were lots of problems dicussed and solved here. 
+
+[Code Institute](https://courses.codeinstitute.net/) I used parts of code from the modules, coursework and projects.
+
+[Slack](https://slack.com/intl/en-ie/) I also used this website for help on code and errors several times and the help from other students and mentors
+there means always someone available.
+
+[StackOverflow](https://stackoverflow.com/) This website was used as a reference for problem and tips.
+
+[W3schools](https://www.w3schools.com/) I used this website when I encountered some problems with my code.
+
+Guido Cecilio, Guido is my mentor and his help and patience on this project was incredible again. I learned so much from
+our meetings and without his knowledge and information it would have been an impossible task. I am so grateful for his help.
+He also gave me some examples by other students to help me learn and use as reference, I did use some code but tried to
+limit this and modify for use with my app. 
+
+https://github.com/stephyraju/ticktockwatches
+https://github.com/irinatu17/Art-of-Tea
+
+Paul Brennan, a friend of mine who was always at the end of the phone to help with some issues when needed.
 
 **Disclaimer**
-Expand....
 
- The content of this website is for educational purposes only.
+ The content of this website is for entirely educational purposes only.
