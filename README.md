@@ -1,4 +1,4 @@
-# [Fitness 2020](fitness-2020-milestonefour.herokuapp.com)
+# [Fitness 2020](https://fitness-2020-milestonefour.herokuapp.com/)
 
 ![alt text](https://github.com/mattjboland/ci-milestonefour/blob/master/media/homepage_screenshot.jpg)
 
