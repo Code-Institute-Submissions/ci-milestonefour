@@ -341,7 +341,29 @@ Apple iPhone 11, safari
 Apple iPad mini, safari
 Google Chrome, laptop
 
+### Bugs
+
+As always there were many bugs found during the course of development. I had many issues along the way in this
+project, mostly I found the main issue was me and not understanding correctly or not calling functions correctly. I do
+struggle at times with Python and Jinja templating language but the more I do the better I get and the understanding
+improves also. This is the biggest challenge during the course but my main issue is with timing. Certain events caused
+me to be delayed but with the help of various outlets like Slack, Tutor support and Mentor support I was able to complete
+this project. 
+
+I had some problems with toasts messages not displaying correctly, behind the Navbar and to the left. This was a frustrating
+issue that went on so some time. In the end It was a simple fix CSS by targeting the right attribute which fix the problem
+instantly.
+
+I also had a major issue with the footer. It was always showing in the wrong place in the middle of some pages. On inspection
+it turned out I had put the footer in the main content so taking it out of there and pasting in after solve the issue. I also
+added an id with some styling in CSS to make sure it stayed where it was supposed to.
+
+I originally had the products and subscriptions together in the same app but I wanted to try and split into two different apps,
+this proved to be a lot more difficult and time consuming as I had all the views and urls written. So I reverted back to having
+together with the products. So when I deleted the subscriptions app I caused a major problem. 
+
 ### Known Bugs
+
 I have an issue with the back to top button. I am out of time to try and fix but maybe its something I can research
 and find a solution to for a future addition. It seems to be hidden behind footer on some pages and visable on others. 
 It does work however but annoying thats is not visable.
