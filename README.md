@@ -117,12 +117,6 @@ buttons etc.
 I used Google Font Gloria Hallelujah as I like this font and believe it works well with theme of this
 project.
 
-### Wireframes
-
-I used Balsamiq for the wireframes for this project during the planning stages. I tried to stick to
-them as best as possible but during the course of the development slight changes or improvements
-were made.
-
 ## Features
 
 This project features apps (applications) created by using Django command **python3 manage.py startapp nameofapp**
