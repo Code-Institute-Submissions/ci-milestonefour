@@ -132,26 +132,32 @@ refunds.
 The products app has all the products and subscriptions for the site.
 
 **product.html**
+
 This page displays all the clothing products available to purchase. All items have a description and an image.
 Each product has a price and a rating. Clicking on the items brings the user to the following detail page.
 
 **product_detail.html**
+
 This page displays the individual product, where it displays a good clear image of the product and a description.
 The user can then select the products size and a quantity they wish to add to the shopping bag. Or they can 
 continue to browse by clicking the Keep Shopping button.
 
 **subscriptions.html**
+
 Much the same as the product.html page but this displays only the subscriptions available. Again clicking on
 the items brings the user to the following subscripton detail page.
 
 **subscription_detail.html**
+
 This page displays the individual subscripton, where it displays a description. The user can then select the 
 subscripton they wish to add to the shopping bag. Or they can continue to browse by clicking the Keep Shopping button.
 
 **add_product.html**
+
 This page is reserved for the shop owner to add more products to the site.
 
 **edit_product.html**
+
 This page is also reserved for the shop owner to edit products on the site.
 
 ### Profiles App
@@ -186,6 +192,7 @@ information. It also tell the user that a confirmation email was sent to confirm
 The base template is a template of features that will be extended to all pages within the site.
 
 **Navbar**
+
 The Navbar is a Bootstrap Navbar with mobile Navbar included. This was based on the sample from Code Institute but 
 styled to suit the theme of this site. 
 
