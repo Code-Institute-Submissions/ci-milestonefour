@@ -1,6 +1,6 @@
 # [Fitness 2020](fitness-2020-milestonefour.herokuapp.com)
 
-![alt text]()
+![alt text](https://github.com/mattjboland/ci-milestonefour/blob/master/media/homepage_screenshot.jpg)
 
 Code Institute Milestone Project Four
 
