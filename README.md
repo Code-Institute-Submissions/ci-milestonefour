@@ -396,6 +396,7 @@ variable will be defined, we connect to Postgres and otherwise we connect to sql
 
 13. Next set the enviroment variables, got to Heroku dashboard and click settings then Reveal Config Vars.
 Set the following variables.
+
 | Key	                        | Value                      |
 |-------------------------------|----------------------------|
 |AWS_ACCESS_KEY_ID              |<YOUR_AWS_ACCESS_KEY_ID>    |
@@ -408,6 +409,7 @@ Set the following variables.
 |STRIPE_SECRET_KEY              |<YOUR_STRIPE_SECRET_KEY>    |
 |STRIPE_WH_SECRET               |<YOUR_STRIPE_WH_SECRET>     |
 |USE_AWS                        |<YOUR_USE_AWS>              |
+
 
 13. ``pip3 install gunicorn``
 
