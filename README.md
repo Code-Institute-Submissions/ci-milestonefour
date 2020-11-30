@@ -69,7 +69,7 @@ anyone who like to keep fit or regularly attends a gym.
 * As a user I want to be able to have the option to register.
 * As a user who is registered I want to be able to have an account.
 * As a user who is registered I want to be able to log in and out easily.
-* As a user I want to be able to seatch for particular products.
+* As a user I want to be able to search for particular products.
 * As a user I want to be able to avail of free delivery when ordering.
 
 ## Design

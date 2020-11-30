@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class BagConfig(AppConfig):
+class ShoppingBagConfig(AppConfig):
     name = 'shopping_bag'

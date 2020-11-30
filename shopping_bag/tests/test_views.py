@@ -10,7 +10,7 @@ class ShoppingBagViewTests(TestCase):
         self.assertTemplateUsed(response, "shopping_bag/shopping_bag.html")
 
     def test_add_item_to_bag(self):
-        response = self.client.post("/shopping_bag/add/", {'item_id': 1, 'quantity': 1, 'redirect_url': '/shopping_bag/'}, follow=True)
+        response = self.client.post("/shopping_bag/add/", {'item_id': 1, 'quantity': 1, 'redirect_url': '/shopping_bag/'})
         self.assertEqual(response.status_code, 200)
 
     def test_update_item_in_bag(self):
