@@ -314,7 +314,8 @@ directory, run the file in the browser to see the output.
   * **JavaScript**: I have used [https://jshint.com/](https://jshint.com/) Used to check the JavaScript code.
 
 ## Manual Testing
-Expand....
+I have tested the site thoroughly to make sure theres no broken links. I have checked to make sure that the pages are responsive to
+
 
 #### Stripe payment testing
 
@@ -329,10 +330,21 @@ CVC - Any 3 digit number.
 Expiry date - Any date in the future.
 
 ### Responsiveness
-Expand....
+To help with responsiveness I used DevTools when inspecting pages throughout development for a number of purposes,
+one of which was to test the responsiveness and rendering across a range of sizes and devices. I mainly concentrated 
+on iphone5 view as this is the smallest device and if it displayed correctly here then most of the other resolutions
+would be ok. Where possible as issues were found they were either fixed at the time or returned to fix later.
+
+The site has been tested successfully on the following 
+
+Apple iPhone 11, safari
+Apple iPad mini, safari
+Google Chrome, laptop
 
 ### Known Bugs
-Expand....
+I have an issue with the back to top button. I am out of time to try and fix but maybe its something I can research
+and find a solution to for a future addition. It seems to be hidden behind footer on some pages and visable on others. 
+It does work however but annoying thats is not visable.
 
 ### GitHub Repository
 
