@@ -236,11 +236,27 @@ of time to include.
   * [Heroku](https://www.heroku.com/) - Used for deployment of the final project.
   * [PostgreSQL](https://www.postgresql.org/) - Used as the relational SQL database plugin via Heroku.
 
- # Testing 
- Expand....
+# Testing 
 
 ## Automated Testing
-Expand....
+Automated testing is implemented to support manual testing during the development process.
+The intent was not to achieve 100% coverage with automated testing as I am limited to time contraints
+but on average this seems to be quite difficult to achieve.
+
+Unit tests can be found in the the products app in test folder, test_admin.py, test_models.py, test_views.py,
+test_forms.py files. Note: The tests should be added in local database, as The Heroku
+hobby-tier does not give permissions to allow creation of databases that are required for python automated
+testing. To run the test and check the output, the database (Postgres) code configuration in settings.py
+should be temporarily commented out.
+
+**Command used to run the tests:**
+
+``python3 manage.py test``
+
+Coverage was used to get the feedback during the testing and see the percentage of the unit tests implemented.
+to generate a coverage report run the following command: coverage report
+to generate the HTML file run the following command: coverage html and open index.html file in the newly created
+directory, run the file in the browser to see the output.
 
 ### Validation Services
 
