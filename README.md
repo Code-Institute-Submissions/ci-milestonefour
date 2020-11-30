@@ -539,7 +539,8 @@ help.
 * Special mention to CI Tutor Support who really gave me a massive push in the right direction. Mention must go to the other
 students and all on the Slack channels too. There were lots of problems dicussed and solved here. 
 
-* [Code Institute](https://courses.codeinstitute.net/) I used parts of code from the modules, coursework and projects.
+* [Code Institute](https://courses.codeinstitute.net/) I used parts of code from the modules, coursework and projects. Specifically
+the project Boutique Ado. 
 
 * [Slack](https://slack.com/intl/en-ie/) I also used this website for help on code and errors several times and the help from other students and mentors
 there means always someone available.
