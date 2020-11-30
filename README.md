@@ -240,7 +240,7 @@ of time to include.
 
 ## Information database
 
-(ci-milestonefour/media/database_diagram.jpeg)
+[Link for diagram](https://github.com/mattjboland/ci-milestonefour/blob/master/media/database_diagram.jpeg)
 
 ## Technologies Used
 
