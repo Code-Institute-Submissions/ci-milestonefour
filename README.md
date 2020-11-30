@@ -260,9 +260,18 @@ should be temporarily commented out.
 
 ``python3 manage.py test``
 
+### Coverage
+
 Coverage was used to get the feedback during the testing and see the percentage of the unit tests implemented.
-to generate a coverage report run the following command: coverage report
-to generate the HTML file run the following command: coverage html and open index.html file in the newly created
+to generate a coverage report run the following command: 
+
+``coverage report``
+
+To generate the HTML file run the following command:
+
+``coverage html ``
+
+Then open index.html file in the newly created
 directory, run the file in the browser to see the output.
 
 ### Validation Services
@@ -273,14 +282,10 @@ directory, run the file in the browser to see the output.
 
   * **JavaScript**: I have used [https://jshint.com/](https://jshint.com/) Used to check the JavaScript code.
 
-### Coverage
-Expand....
-
 ## Manual Testing
 Expand....
 
 #### Stripe payment testing
-Expand.... more
 
 My checkout app is using the stripe payment for the payment option. I tested this by using Stripes
 test card (4242 4242 4242 4242) I tested the forms and ensured all my validation worked as expected
@@ -299,7 +304,8 @@ Expand....
 Expand....
 
 ### GitHub Repository
-Check and Expand....
+
+## Deployment
 
 1. Created a repository in GitHub called: mattjboland/ci-milestonefour
 
@@ -330,42 +336,123 @@ to GitHub using a chained command.
 
 git add .; git commit -m "Commit message"; git push
 
-## Deployment
-Expand....
-
 ### How to run this project locally
-Expand....
+The Fitness 2020 project was developed using the online IDE GitPod and using Git and GitHub for
+version control. It is hosted on Heroku with static files and media files hosted in AWS S3 Bucket.
 
 ### Heroku Deployment
-Check and Expand....
 
 To deploy Fitness 2020 to heroku, use the following process:
 
-1. Create a requirements.txt file using the terminal command pip freeze > requirements.txt.
-
-2. Create a Procfile with the terminal command echo web: python app.py > Procfile.
-
-3. git add and git commit the new requirements and Procfile and then git push the project 
-to GitHub.
-
-4. Sign up for a free Heroku account, Create a new app on the Heroku website by clicking the 
+1. Sign up for a free Heroku account, Create a new app on the Heroku website by clicking the 
 "New" button in your dashboard. Give it a name and set the region to Europe.
 
-5. From the heroku dashboard of your newly created application, click on "Deploy" > 
-"Deployment method" and select GitHub, and enable Automatic Deployment.
-
-6. In the Heroku Resources tab, navigate to the Add-Ons section and search for Heroku Postgres. 
+2. In the Heroku Resources tab, navigate to the Add-Ons section and search for Heroku Postgres. 
 Select the free Hobby level. This will allow you to have a remote database instead of using the 
 local sqlite3 database, and can be found in the Settings tab. You'll need to update your .env 
 file with your new database-url details. Confirm the linking of the heroku app to the correct 
-GitHub repository.
+GitHub repository. 
+
+3. ``pip3 install dj_database_url``
+
+4. ``pip3 install psycopg2-binary``
+
+5. Then freeze requirements into requirements.txt
+
+``pip3 freeze > requirements.txt``
+
+6. This will ensure Heroku installs all our apps requirements when we deploy. 
+
+7. Then head to seetings.py file and set up apps new database. First import the following,
+``import dj_database_url`` at the top. Then scroll down to the database setting and comment
+out the default configuration and replace it with a call to dj_database_url.parse and give 
+it the database URL from Heroku. This can be found in Config Vars in app settings or include
+command line by typing heroku config. So just copy and paste in.
+
+8. With that saved were ready to connect our new Heroku database and run migrations. 
+
+``python3 manage.py showmigrations``
+``python3 manage.py migrate``
+
+This will apply all migrations and get out database set up.
+
+9. Now to import all our product data, we can use our fixtures again by loading categories
+and then products.
+
+``python3 manage.py loaddata categories``
+``python3 manage.py loaddata products``
+
+10. Then create a superuser to log in with.
+
+``python3 manage.py createsuperuser``
+
+Following the instructions in the terminal.
+
+11. Back in settings.py remove the Heroku database config and uncomment the default so our
+database URL doesnt end up in version control.
+
+12. Then change the database setting to use an if statement so that when the database URL environmental
+variable will be defined, we connect to Postgres and otherwise we connect to sqlite3.
+
+13. Next set the enviroment variables, got to Heroku dashboard and click settings then Reveal Config Vars.
+Set the following variables.
+| Key	                        | Value                      |
+|-------------------------------|----------------------------|
+|AWS_ACCESS_KEY_ID              |<YOUR_AWS_ACCESS_KEY_ID>    |
+|AWS_SECRET_ACCESS_KEY          |<YOUR_AWS_SECRET_ACCESS_KEY>|
+|DATABASE_URL                   |<YOUR_DATABASE_URL>         |       
+|EMAIL_HOST_PASS                |<YOUR_EMAIL_HOST_PASS>      |
+|EMAIL_HOST_USER                |<YOUR_EMAIL_HOST_USER>      |
+|SECRET_KEY                     |<YOUR_SECRET_KEY>           |
+|STRIPE_PUBLIC_KEY              |<YOUR_STRIPE_PUBLIC_KEY>    |
+|STRIPE_SECRET_KEY              |<YOUR_STRIPE_SECRET_KEY>    |
+|STRIPE_WH_SECRET               |<YOUR_STRIPE_WH_SECRET>     |
+|USE_AWS                        |<YOUR_USE_AWS>              |
+
+13. ``pip3 install gunicorn``
+
+14. Again freeze requirements.
+
+15. Create a Procfile with the terminal command 
+
+``echo web: python app.py > Procfile``
+
+web: gunicorn appname.wsgi:application
+
+16. Then log into Heroku from terminal.
+
+``heroku login -i``
+
+17. Next run.
+
+``heroku config:set DISABLE_COLLECTSTATIC=1 --app appname``
+
+This will prevent Heroku from collecting static files when we deploy.
+
+18. Next add the hostname of our app to allowed hosts in settings.py.
+
+``ALLOWED_HOSTS = ['fitness-2020-milestonefour.herokuapp.com', 'localhost']``
+
+Add local host so GitPod will still work.
+
+19. git add and git commit the new requirements and Procfile and then git push the project 
+to GitHub 
+
+20. Then connect to Heroku.
+
+``heroku git:remote -a appname``
+
+``git push heroku master``
+
+21. Next set up to automatically deploy when we push to GitHub. Go to app in Heroku deploy tab
+set to GitHub and search for you repository and then click connect.
 
 7. In the heroku dashboard for the application, click on settings tab and then click on the 
 Reveal config vars button to configure environmental variables.
 
 Set the following config vars:
 
-Key	                        Value                    
+                 
 
 8. In the Heroku dashboard, click "Deploy".
 
