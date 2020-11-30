@@ -46,7 +46,14 @@ The deployed site can be found at [Fitness 2020](fitness-2020-milestonefour.hero
 **7. [Credits](#credits)**
 
 ## UX
-Expand....
+This project Fitness 2020 is to provide a Fitness Subscription Service to a user but also provide clothing essentials for 
+anyone who like to keep fit or regularly attends a gym. 
+
+### Target Audience
+
+* People who like to keep fit or get in shape
+* People who regularly work out or train
+* People who like to eat right
 
 ## User Stories
 Expand....
