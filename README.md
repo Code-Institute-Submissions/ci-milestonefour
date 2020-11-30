@@ -610,6 +610,12 @@ https://github.com/irinatu17/Art-of-Tea
 
 * Paul Brennan, a friend of mine who was always at the end of the phone to help with some issues when needed.
 
+**Notes**
+
+I wasnt able to fully conform to PEP8 Styling Guide for Python Code due to time constraints. I hope this doesnt effect
+the overall marks too much. There are also some points from checklist from Guido I was unable to get to as I ran out of time.
+I do apolgise for this and again hope it doesnt have too much impact on the result.
+
 **Disclaimer**
 
  The content of this website is for entirely educational purposes only.
