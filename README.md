@@ -1,12 +1,13 @@
 # [Fitness 2020](fitness-2020-milestonefour.herokuapp.com)
 
+![alt text]()
+
 Code Institute Milestone Project Four
 
-This is a Fitness Subscription App, for Full Stack Frameworsk with [Django](https://www.djangoproject.com/
- Milestone Four Project.
+This is a Fitness Subscription App, for Full Stack Frameworks with [Django](https://www.djangoproject.com/)
+Milestone Four Project.
 
 Fitness 2020, is an App built using the Django Framework with Python programming language.
-Expand....
 
 Throughout this project I have used [Python](https://www.python.org/), a high-end programming
 language along with [Django](https://www.djangoproject.com/), a python framework.
@@ -276,18 +277,18 @@ should be temporarily commented out.
 
 **Command used to run the tests:**
 
-``python3 manage.py test``
+* ``python3 manage.py test``
 
 ### Coverage
 
 Coverage was used to get the feedback during the testing and see the percentage of the unit tests implemented.
 to generate a coverage report run the following command: 
 
-``coverage report``
+* ``coverage report``
 
 To generate the HTML file run the following command:
 
-``coverage html ``
+* ``coverage html ``
 
 Then open index.html file in the newly created
 directory, run the file in the browser to see the output.
@@ -329,30 +330,30 @@ Expand....
 
 2. Initialised git from the terminal using Git Bash:
 
-    git init
+    * git init
 
 3. Created a .gitignore file and I have added the files and folders that won't need to push
 to GitHub (i.e. .theia, .gitpod, .dockerfile, .gitpod.yml, env.py, __pycache__/, *.sqlite3, *.pyc)
 
 4. Added the files that I was working on to the Staging area by using:
 
-   git add .
+* git add .
 
 5. Run the commit command with the first commit
 
-  git commit -m “initial commit"
+* git commit -m “initial commit"
 
 6. Copied from GitHub the following path and I ran it in the Git Bash terminal in order to
 indicate where my remote repository is.
 
- git remote add origin 
+* git remote add origin 
  
- git push -u origin master
+* git push -u origin master
 
 7. I've run regular commits after every important update to the code, and I pushed the changes
 to GitHub using a chained command.
 
-git add .; git commit -m "Commit message"; git push
+* git add .; git commit -m "Commit message"; git push
 
 ### How to run this project locally
 
@@ -378,7 +379,7 @@ GitHub repository.
 
 5. Then freeze requirements into requirements.txt
 
-``pip3 freeze > requirements.txt``
+* ``pip3 freeze > requirements.txt``
 
 6. This will ensure Heroku installs all our apps requirements when we deploy. 
 
@@ -390,20 +391,20 @@ command line by typing heroku config. So just copy and paste in.
 
 8. With that saved were ready to connect our new Heroku database and run migrations. 
 
-``python3 manage.py showmigrations``
-``python3 manage.py migrate``
+* ``python3 manage.py showmigrations``
+* ``python3 manage.py migrate``
 
 This will apply all migrations and get out database set up.
 
 9. Now to import all our product data, we can use our fixtures again by loading categories
 and then products.
 
-``python3 manage.py loaddata categories``
-``python3 manage.py loaddata products``
+* ``python3 manage.py loaddata categories``
+* ``python3 manage.py loaddata products``
 
 10. Then create a superuser to log in with.
 
-``python3 manage.py createsuperuser``
+* ``python3 manage.py createsuperuser``
 
 Following the instructions in the terminal.
 
@@ -436,23 +437,23 @@ Set the following variables.
 
 16. Create a Procfile with the terminal command 
 
-``echo web: python app.py > Procfile``
+* ``echo web: python app.py > Procfile``
 
 web: gunicorn appname.wsgi:application
 
 17. Then log into Heroku from terminal.
 
-``heroku login -i``
+* ``heroku login -i``
 
 18. Next run.
 
-``heroku config:set DISABLE_COLLECTSTATIC=1 --app appname``
+* ``heroku config:set DISABLE_COLLECTSTATIC=1 --app appname``
 
 This will prevent Heroku from collecting static files when we deploy.
 
 19. Next add the hostname of our app to allowed hosts in settings.py.
 
-``ALLOWED_HOSTS = ['fitness-2020-milestonefour.herokuapp.com', 'localhost']``
+* ``ALLOWED_HOSTS = ['fitness-2020-milestonefour.herokuapp.com', 'localhost']``
 
 Add local host so GitPod will still work.
 
@@ -461,9 +462,9 @@ to GitHub
 
 21. Then connect to Heroku.
 
-``heroku git:remote -a appname``
+* ``heroku git:remote -a appname``
 
-``git push heroku master``
+* ``git push heroku master``
 
 22. Next set up to automatically deploy when we push to GitHub. Go to app in Heroku deploy tab
 set to GitHub and search for you repository and then click connect.                
