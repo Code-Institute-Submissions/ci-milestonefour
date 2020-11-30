@@ -507,23 +507,23 @@ There were many tutorials watching during the developement of this project.
 
 ### Acknowledgement
 
-A massive thank you goes to all the tutors, mentors and support staff at Code Institute. Honestly dont know how many
+* A massive thank you goes to all the tutors, mentors and support staff at Code Institute. Honestly dont know how many
 times I was onto Support for help. It was greatly appreciated and this project would not have been possible without their 
 help.
 
-Special mention to CI Tutor Support who really gave me a massive push in the right direction. Mention must go to the other
+* Special mention to CI Tutor Support who really gave me a massive push in the right direction. Mention must go to the other
 students and all on the Slack channels too. There were lots of problems dicussed and solved here. 
 
-[Code Institute](https://courses.codeinstitute.net/) I used parts of code from the modules, coursework and projects.
+* [Code Institute](https://courses.codeinstitute.net/) I used parts of code from the modules, coursework and projects.
 
-[Slack](https://slack.com/intl/en-ie/) I also used this website for help on code and errors several times and the help from other students and mentors
+* [Slack](https://slack.com/intl/en-ie/) I also used this website for help on code and errors several times and the help from other students and mentors
 there means always someone available.
 
-[StackOverflow](https://stackoverflow.com/) This website was used as a reference for problem and tips.
+* [StackOverflow](https://stackoverflow.com/) This website was used as a reference for problem and tips.
 
-[W3schools](https://www.w3schools.com/) I used this website when I encountered some problems with my code.
+* [W3schools](https://www.w3schools.com/) I used this website when I encountered some problems with my code.
 
-Guido Cecilio, Guido is my mentor and his help and patience on this project was incredible again. I learned so much from
+* Guido Cecilio, Guido is my mentor and his help and patience on this project was incredible again. I learned so much from
 our meetings and without his knowledge and information it would have been an impossible task. I am so grateful for his help.
 He also gave me some examples by other students to help me learn and use as reference, I did use some code but tried to
 limit this and modify for use with my app. 
@@ -531,7 +531,7 @@ limit this and modify for use with my app.
 https://github.com/stephyraju/ticktockwatches
 https://github.com/irinatu17/Art-of-Tea
 
-Paul Brennan, a friend of mine who was always at the end of the phone to help with some issues when needed.
+* Paul Brennan, a friend of mine who was always at the end of the phone to help with some issues when needed.
 
 **Disclaimer**
 
