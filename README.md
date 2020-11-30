@@ -238,6 +238,10 @@ of time to include.
 4. To include a contact us form on the contact page.
 5. Delivery policy page.
 
+## Information database
+
+![alt text](database_diagram.jpeg)
+
 ## Technologies Used
 
   * [GitPod](https://gitpod.io/workspaces/) - The IDE used for developing this project.
