@@ -103,6 +103,7 @@ a.category-badge > span.badge:hover {
 .update-link,
 .remove-item {
     cursor: pointer;
+    /* margin-bottom: 5rem; */
 }
 
 input[name='q']::placeholder {
@@ -321,6 +322,7 @@ input[name='q']::placeholder {
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {
         padding: .375rem .375rem;
+        margin-bottom: 5rem;
     }
 
     .btn.btn-outline-black.rounded-0.btn-lg,
@@ -348,6 +350,13 @@ padding-bottom: 4rem;
 }
 
 /* -------------------------------- Footer for Fitness 2020 */
+
+#footer {
+    position: fixed;
+    padding-top: 5rem;
+    bottom: 0px;
+    width: 100%;
+}
 
 .footer-links a{
     padding-left: 1%;
