@@ -129,27 +129,80 @@ This is the returns policy page where users can see the terms and conditions of 
 refunds.
 
 ### Products App
-Expand....
+The products app has all the products and subscriptions for the site.
 
 **product.html**
+This page displays all the clothing products available to purchase. All items have a description and an image.
+Each product has a price and a rating. Clicking on the items brings the user to the following detail page.
 
 **product_detail.html**
+This page displays the individual product, where it displays a good clear image of the product and a description.
+The user can then select the products size and a quantity they wish to add to the shopping bag. Or they can 
+continue to browse by clicking the Keep Shopping button.
 
-### Profile App
-Expand....
+**subscriptions.html**
+Much the same as the product.html page but this displays only the subscriptions available. Again clicking on
+the items brings the user to the following subscripton detail page.
+
+**subscription_detail.html**
+This page displays the individual subscripton, where it displays a description. The user can then select the 
+subscripton they wish to add to the shopping bag. Or they can continue to browse by clicking the Keep Shopping button.
+
+**add_product.html**
+This page is reserved for the shop owner to add more products to the site.
+
+**edit_product.html**
+This page is also reserved for the shop owner to edit products on the site.
+
+### Profiles App
+The profiles app is for registered users who have signed up and created an account. It displays the users profile and details
+which can be updated at anytime. This page also provides the user with an order history where they can views past orders.
 
 ### Shopping Bag App
-Expand....
+The shopping bag app features a summary of all the items added to the shopping bag. This includes the image of the
+item, title and the price. A quantity field is displayed with each item in the bag, giving the ability to adjust the
+quantity in their cart. The user can also see the total of the shopping bag and this will be updated when the user updates
+the quantity in their shopping bag. This also tells the user in order to recieve free delivery they user needs to spend
+another calculated total to bring it above the ammount that qualifies for free delivery. Alternatively it provides
+an estimated cost of delivery.
 
 ### Checkout App
-Expand....
+The checkout app allows the user to successfully checkout and purchase items in the shopping bag.
+
+**checkout.html**
+
+This page displays what is in the shopping bag and give the ability to purchase items safely and securely with Stripe. 
+This page allows allows the user to save information for future purchases. When payments are made there are notifications
+that pop up when payment is successful or if there is a problem with either the payment or a filed on the form. These are 
+easy for the user to see and correct when and where necessary.
+
+**checkout_success.html**
+
+This page is displayed when a user successfully makes a purchase. It gives the user an order confirmation with order
+number and date of the order. How much was charged to your card, a summary of item or items purchased and the delivery
+information. It also tell the user that a confirmation email was sent to confirm the purchase with all details.
 
 ### Base Template
-Expand....
+The base template is a template of features that will be extended to all pages within the site.
 
 **Navbar**
+The Navbar is a Bootstrap Navbar with mobile Navbar included. This was based on the sample from Code Institute but 
+styled to suit the theme of this site. 
+
+It features the name of the site which is also a home button to help user navigate abck to the home view. It also has
+a search feature where users can search for particular products of interest. On the far right it has a dropdown for 
+My Account, where users can register, log in and log out. It also has a link to the shopping bag which displays
+the value of any contents that maybe in the shopping bag.
+
+Then it has nav links for all products subscriptions clothing and special offers if there are any. This allows users
+to navigate to particular pages within the site to view or purchase items as needed. Then directly below that a nice 
+feature that explains to users that there is free delivery on all order above €50.
 
 **Footer**
+
+The Footer was based from two different examples and styed to suit the theme of this site. 
+
+It has links to various pages within the site some social media links and the name of the site.
 
 ## Features Left to Implement
 Expand....
